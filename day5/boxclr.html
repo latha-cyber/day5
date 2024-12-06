@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .orange{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+   <div class="red"> </div>
+   <button id="btn" onclick="changeColor()">check </button>
+   <script>
+    let red=document.querySelector(".red");
+    let button=document.getElementById("btn");
+    button.addEventListener('click',function(){
+        red.classList.add("orange")
+        console.log(red);
+    })
+
+    
+    
+    </script>
+</body>
+</html>
